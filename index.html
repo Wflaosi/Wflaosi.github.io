@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 楷体;
+        }
+        nav{
+            width: 100%;
+            height: 64px;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+        }
+        nav div{
+            width: 1000px;
+            height: 64px;
+            margin:0 auto;
+        }
+        #logo{
+            width: 216px;
+            position: relative;
+            top: 7px;
+            left: 15px;
+        }
+        ul{
+            float: right;
+            margin: 0;
+            padding-left: 0;
+        }
+        li{
+            float: left;
+            list-style: none;
+            margin-right: 30px;
+        }
+        li a{
+            line-height: 64px;
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            color: brown;
+        }
+        #header{
+            /*图片宽度设为100%*/
+            width: 100%;
+        }
+        main {
+            width: 1000px;
+            margin:0 auto;
+        }
+        section > img {
+            width: 1000px;
+        }
+        p {
+            color: brown;
+            text-indent: 2em;
+        }
+        h2 {
+            color: brown;
+        }
+        #myclassmate {
+            width: 1000px;
+            height: 630px;
+            background-image: url('personage/classmates.jpg');
+            background-size: 1000px 630px;
+            position: relative;
+        }
+        #myclassmate img{
+            border:2px white solid;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #myclassmate img:nth-child(1){
+            width: 200px;
+            top: 100px;
+            left: 100px;
+        }
+        #myclassmate img:nth-child(2){
+            width: 270px;
+            top: 260px;
+            left: 360px;
+        }
+        #myclassmate img:nth-child(3){
+            width: 230px;
+            top: 100px;
+            right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!--加载音频文件-->
+    <audio src="惯犯.mp3" autoplay></audio>
+
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#header">首页</a></li>
+                <li><a href="#html5">我</a></li>
+                <li><a href="#classmates">我的同学</a></li>
+                <li><a href="#hometown">我的家乡</a></li>
+                <li><a href="#myschool">我的学校</a></li>
+                <li><a href="#myself">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img id="header" src="personage/header.png" alt="晨曦">
+    <main>
+        <section id="html5">
+            <img src="personage/html5.jpg" alt="html5.jpg">
+            <p>“李奕晨，男，汉族。2003年6月21日生，陕西西安人。”</p>
+        </section>
+ 
+        <section id="classmates">
+            <h2>我的同学</h2>
+            <div id="myclassmate">
+                <img src="personage/wf.png" alt="">
+                <img src="personage/lry.jpg" alt="">
+                <img src="personage/ldh.jpg" alt="">
+            </div>
+            <p>“铁二班的同学们都很好！”</p>
+        </section>
+ 
+        <section id="hometown">
+            <h2>我的家乡</h2>
+            <img src="personage/hometown.png" alt="hometown.jpg">
+            <p>西安西安，简称“镐”，古称长安、镐京，陕西省辖地级市，是陕西省省会、副省级市、特大城市，国家重要的科研、教育和工业基地</p>
+        </section>
+ 
+        <section id="myschool">
+            <h2>我的学校</h2>
+            <img src="personage/lzu.png" alt="lzu.png">
+            <p>华南师范大学（South China Normal University），简称“华南师大” ，校本部位于广东省广州市，是广东省人民政府和教育部共建高校，是国家“双一流”建设高校”  、国家“211工程”重点建设大学</p>
+        </section>
+ 
+    </main>
+    <hr>
+    <p id="myself" style="text-align: center;">&copy;欲买桂花同载酒，终不似、少年游。</p>
+ 
+</body>
+</html>
